@@ -22,7 +22,7 @@
 </head>
 <body>
 <header>
-    <div class="header-sides x_padding f a-c s-b  ">
+    <div class="header-sides x2_padding f a-c s-b  ">
         <div class="header_side f a-e">
             <a href="#" class="main_logo  main_logo_inner" aria-label="Homepage"
                style="">
@@ -49,11 +49,12 @@
 
     </div>
 
-    <div class="project_bar_set x_padding">
+    <div class="project_bar_set x2_padding">
         <div class="project_bar f s-b">
             <div class="scrollTo _pointer _y" data-scroll="project-overview">
-                <span class="_element words"><div style="position:relative;display:inline-block;" class="SplitClass">About</div> <div
-                        style="position:relative;display:inline-block;" class="SplitClass">us</div></span>
+                <span class="_element words">
+                    <div style="position:relative;display:inline-block;" class="SplitClass">About us</div>
+<!--                    <div style="position:relative;display:inline-block;" class="SplitClass"></div></span>-->
             </div>
             <span class="seperator"></span>
 
@@ -891,13 +892,12 @@
     </section>
 
 </main>
-
-<footer class="site-footer">
+<footer class="site-footer" style="background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.93) 0%, rgba(18, 18, 18, 0.93) 100%), url(img/footer.png); background-size: cover; background-repeat: no-repeat;">
     <div class="x2_padding">
         <div class="row justify-content-between">
             <div class="col-lg-4">
-                <div class="widget">
-                    <a><img src="img/logofoot.svg" style="width: auto"></a>
+                <div class="widget ma">
+                    <a><img src="img/logo.svg" class="" style="width: auto"></a>
                     <p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonummy nibh tempor cum
                         consectetuere.</p>
                     <div class="input-group mb-3 group-input">
@@ -923,7 +923,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class=" col-sm-12 col-md-3">
+                    <div class=" col-sm-6 col-md-3">
                         <div class="widget">
                             <label>Account </label>
                             <ul class="links list-unstyled">
@@ -1148,5 +1148,7 @@
         });
     });
 </script>
+
+
 </body>
 </html>

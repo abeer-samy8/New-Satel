@@ -13,10 +13,10 @@ body, html {
 }
 .hero-content {
     position: absolute;
-    top: 60%; /* Position the content 50% from the top of the hero section */
-    left: 50%; /* Position the content 50% from the left of the hero section */
-    transform: translate(-50%, -50%); /* Center the content horizontally and vertically */
-    text-align: center; /* Center the text in the content */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .hero-content h1 {
     color: #FFF;
@@ -24,22 +24,18 @@ body, html {
     font-size: 140px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 140px */
+    line-height: 100%;
     letter-spacing: 28px;
 }
-.hero {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="815" viewBox="0 0 1440 815" fill="none"><path d="M0 0H1440V815H0V0Z" fill="url(#paint0_linear_1519_6747)" fill-opacity="0.4"/><defs><linearGradient id="paint0_linear_1519_6747" x1="720" y1="0" x2="730.5" y2="815" gradientUnits="userSpaceOnUse"><stop stop-opacity="0"/><stop offset="0.0760415" stop-opacity="0.31"/><stop offset="0.175" stop-opacity="0.34"/><stop offset="0.45625" stop-opacity="0.6"/><stop offset="0.617708" stop-opacity="0.66"/><stop offset="1" stop-opacity="0.21"/></linearGradient></defs></svg>');
-    background-size: cover;
-    background-position: center;
-}
+
 .header-sides {
-    padding-top: 1.5em;
     position: relative;
+    padding-top: 1.5em;
 }
-.x_padding {
-    padding-left: 3.889em;
-    padding-right: 3.889em;
-}
+/*.x_padding {*/
+/*    padding-left: 100px;*/
+/*    padding-right: 100px;*/
+/*}*/
 .a-e {
     align-items: flex-end;
 }
@@ -74,14 +70,14 @@ margin-left: 16px;
     font-weight: 500;
     line-height: normal;
 }
-.project_bar_set{
-    pointer-events:all;
-}
+
 .project_bar_set .project_bar {
-    margin-top: 2em;
-    border: 1px solid rgba(255,255,255,0.4);
+    margin-top: 12px;
+    border: 1px solid rgba(255,255,255,0.60);
     border-left: none;
     border-right: none;
+    padding: 16px;
+    position: relative;
 }
 ._pointer {
     cursor: pointer;
@@ -260,7 +256,8 @@ header {
     position: relative;
 }
 .main_logo {
-    width: 10.222em;
+    width: 124px;
+    height: 50px;
     pointer-events: all;
 }
 
@@ -335,8 +332,8 @@ body:not(.isTouch) .expanded_button:hover {
 
 /* Project Bar */
 .project_bar {
-    padding: 21px;
-    position: relative;
+
+
 }
 
 
@@ -344,12 +341,6 @@ body:not(.isTouch) .expanded_button:hover {
     pointer-events: all;
 }
 
-.seperator {
-    height: 1em;
-    width: 1px;
-    background: rgba(0,0,0,0.6);
-    display: block;
-}
 
 .project_bar_set .seperator {
     height: 1em;
@@ -628,12 +619,34 @@ body:not(.isTouch) .expanded_button:hover {
     text-align: center;
     position: relative;
 }
+.gallery_row_ani {
+    position: absolute;
+}
+.gallery_row:first-child .gallery_row_ani {
+    bottom: 0;
+}
+
+.gallery_row:last-child .gallery_row_ani {
+    top: 0;
+}
+.gallery_col {
+    width: 100%;
+    margin: 2.222em 0;
+}
+.gallery_row:first-child {
+    transform: translateX(-6em);
+}
+
+.gallery_row:last-child {
+    transform: translateX(6em);
+}
+
 .section_s_head > span {
     margin-bottom: 1em;
     display: block;
 }
-.gallery-h2 {
-    text-transform: uppercase;
+.gallery_container h2 {
+    /*text-transform: uppercase;*/
     color: #000;
     text-align: center;
     font-family: Abhaya Libre SemiBold;
@@ -641,7 +654,7 @@ body:not(.isTouch) .expanded_button:hover {
     font-style: normal;
     font-weight: 500;
     line-height: 90%; /* 57.6px */
-    width: 523px;
+    width: 499px;
 }
 .gallery_wrap {
     overflow: hidden;
@@ -705,11 +718,10 @@ body:not(.isTouch) .expanded_button:hover {
     padding-top: 70px;
     padding-bottom: 30px;
     font-size: 18px;
-    background-color: #00A7CF;
     font-weight: 400;
     color: #FFFFFF;
+    background-position: center;
 }
-
 .widget p {
     padding-top: 22px;
 }
@@ -803,7 +815,7 @@ body:not(.isTouch) .expanded_button:hover {
 
 .text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
 }
 
